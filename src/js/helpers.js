@@ -81,7 +81,7 @@
       return (
         (o = o
           .toLowerCase()
-          .replace(/[^a-zA-Z0-9]+(.)+(-)/g, (e, r) => r.toLowerCase())),
+          .replace(/[^a-zA-Z0-9+(-)]+(.)/g, (e, r) => r.toLowerCase())),
         (o = o.replace(/[^a-zA-Z0-9_-]/g, "_")),
         /^\d/.test(o) && (o = "_" + o),
         o
