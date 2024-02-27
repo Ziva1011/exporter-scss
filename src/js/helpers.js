@@ -73,8 +73,10 @@
       return 0 === e ? "" + e : e + "px";
     }
     Pulsar.registerFunction("readableVariableName", function (e, r, n) {
-      const t = [...r.path];
-      r.isRoot || r.isNonVirtualRoot || t.push(""),
+      const path = r.path
+
+      const t = path.includes("core")?[...path.slice(path.indexOf("core"))]:[...path.slice(path.indexOf("semantic"))];
+      r.isRoot || r.isNonVirtualRoot || t.push(r.name),
         t.push(e.name),
         n && n.length > 0 && t.unshift(n);
       let o = t.join("-");
