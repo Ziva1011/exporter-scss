@@ -100,6 +100,14 @@
           o = (180 * Math.atan2(n, t)) / Math.PI;
         return ((o += 90) < 0 ? 360 + o : o) % 360;
       }),
+      Pulsar.registerPayload("", {
+        colorTokenPrefix: "",
+        borderTokenPrefix: "",
+        gradientTokenPrefix: "",
+        measureTokenPrefix: "",
+        shadowTokenPrefix: "",
+        typographyTokenPrefix: "",
+      }),
       Pulsar.registerFunction("shadowDescription", function (e) {
         let r = "transparent";
         return e.shadowLayers
