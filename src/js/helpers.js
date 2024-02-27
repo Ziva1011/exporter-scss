@@ -100,7 +100,7 @@
           o = (180 * Math.atan2(n, t)) / Math.PI;
         return ((o += 90) < 0 ? 360 + o : o) % 360;
       }),
-      Pulsar.registerPayload("", {
+      Pulsar.registerPayload("behavior", {
         colorTokenPrefix: "",
         borderTokenPrefix: "",
         gradientTokenPrefix: "",
