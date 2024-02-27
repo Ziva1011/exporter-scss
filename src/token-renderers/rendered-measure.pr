@@ -17,14 +17,14 @@ Note: Value is passed as `context` property because it is injected
 
 *}
 {[ inject "reference-wrapper" context context ]}
-{[ let unit = "px" /]}
+{[ let unit = "rem" /]}
 {[ switch context.unit ]}
 {[ case "Points"]}
 {[ set unit = "pt"/]}
 {[ case "Percent"]}
 {[ set unit = "%"/]}
-{[ case "Ems"]}
-{[ set unit = "em"/]}
+{[ case "Pixels"]}
+{[ set unit = "px"/]}
 {[/]}
 {{ context.measure }}{{ unit }}
 {[/]}
