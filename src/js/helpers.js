@@ -74,7 +74,6 @@
     }
     Pulsar.registerFunction("readableVariableName", function (e, r, n) {
       const t = [...r.path];
-      r.isRoot || r.isNonVirtualRoot || t.push(""),
         t.push(e.name),
         n && n.length > 0 && t.unshift(n);
       let o = t.join("-");
