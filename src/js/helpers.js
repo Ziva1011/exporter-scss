@@ -79,13 +79,7 @@
         n && n.length > 0 && t.unshift(n);
       let o = t.join(" ");
       return (
-        (o = o
-          .toLowerCase()
-          .replace(/[^a-zA-Z0-9]+(.)/g, (e, r) => r.toUpperCase())),
-        (o = o.replace(/[^a-zA-Z0-9_-]/g, "_")),
-        /^\d/.test(o) && (o = "_" + o),
-        o
-      );
+        (o));
     }),
       Pulsar.registerFunction("findAliases", function e(r, n) {
         let t = n.filter(
