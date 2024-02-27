@@ -6,27 +6,27 @@
         },
         {
             "invoke": "borders.pr",
-            "write_to": "borders.scss"
+            "write_to": "scss/borders.scss"
         },
         {
             "invoke": "gradients.pr",
-            "write_to": "gradients.scss"
+            "write_to": "scss/gradients.scss"
         },
         {
             "invoke": "measures.pr",
-            "write_to": "measures.scss"
+            "write_to": "scss/measures.scss"
         },
         {
             "invoke": "shadows.pr",
-            "write_to": "shadows.scss"
+            "write_to": "scss/shadows.scss"
         },
         {
             "invoke": "typography.pr",
-            "write_to": "typography.scss"
+            "write_to": "scss/typography.scss"
         },
         {
             "invoke": "index-file.pr",
-            "write_to": "index.scss"
+            "write_to": "scss/index.scss"
         }
     ]
 }
