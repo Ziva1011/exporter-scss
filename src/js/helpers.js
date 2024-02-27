@@ -77,9 +77,15 @@
       r.isRoot || r.isNonVirtualRoot || t.push(r.name),
         t.push(e.name),
         n && n.length > 0 && t.unshift(n);
-      let o = t.join(" ");
+      let o = t.join("-");
       return (
-        (o));
+        (o = o
+          .toLowerCase()
+          .replace(/[^a-zA-Z0-9]+(.)/g, (e, r))),
+        (o = o.replace(/[^a-zA-Z0-9_-]/g, "_")),
+        /^\d/.test(o) && (o = "_" + o),
+        o
+      );
     }),
       Pulsar.registerFunction("findAliases", function e(r, n) {
         let t = n.filter(
